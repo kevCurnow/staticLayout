@@ -1,57 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  </head>
+  <body>
     <div class="firstSection">
-    <header>
+      <header>
         <div class="header">
-        <img src="assets/kast-logo-horizontal-color-white.svg" class='companyLogo'>
-        <nav>
-            <ul class="navbar">
-                <li>About</li>
-                <li>Help</li>
-                <li>Community</li>
-                <li>Premium</li>
+          <img
+            src="assets/kast-logo-horizontal-color-white.svg"
+            class="companyLogo"
+          />
+          <nav>
+            <ul class="navbar mr-auto">
+
+              <li class="dropDownA">
+                  <input type="checkbox" id="aboutToggle" />
+                  <label for="aboutToggle"
+                    >About<i class="fa fa-caret-down"></i
+                  ></label>
+                  <ul class="dropdownLinks">
+                    <l1 class="dropdownLinksActive">What is Kast?</l1>
+                    <li class="dropdownLinksActive">Blog</li>
+                    <li class="dropdownLinksActive">Press Releases</li>
+                    <li class="dropdownLinksActive">Company</li>
+                  </ul>
+              </li>
+              
+              <li class="dropDownA">
+                <input type="checkbox" id="helpToggle" />
+                <label for="helpToggle"
+                  >Help<i class="fa fa-caret-down"></i
+                ></label>
+                <ul class="dropdownLinks">
+                  <l1 class="dropdownLinksActive">Contact Support</l1>
+                  <li class="dropdownLinksActive">FAQ's</li>
+                  <li class="dropdownLinksActive">Downloads</li>
+                </ul>
+              </li>
+              <li class="dropDownA">
+                <input type="checkbox" id="communityToggle" />
+                <label for="communityToggle"
+                  >Community<i class="fa fa-caret-down"></i
+                ></label>
+                <ul class="dropdownLinks">
+                  <l1 class="dropdownLinksActive">Community Guidelines</l1>
+                  <li class="dropdownLinksActive">Founders Hall of Fame</li>
+                  <li class="dropdownLinksActive">Shop Kast Swag</li>
+                </ul>
+              </li>
+              <li class="dropDownA">Premium</li>
             </ul>
-        </nav>
+            <a href="https://w.kast.live" target="_blank" class="openKastAnchor">OPEN KAST</a>
+          </nav>
         </div>
-    </header>
-    <div class="introContainer">
-        <img src="assets/laptop-table.png" class="laptop">
+      </header>
+      <div class="introContainer">
+        <img src="assets/laptop-table.png" class="laptop" />
         <h1 class="centered whiteColor">Watch parties made easy</h1>
-        <h3 class="centered whiteColor">Share movies, TV shows, and whatever you want with friends online. Join millions of kasters today!</h3>
-        <button class="openKast">OPEN KAST</button>
-    </div>
+        <h3 class="centered whiteColor">
+          Share movies, TV shows, and whatever you want with friends online.
+          Join millions of kasters today!
+        </h3>
+        <button class="openKast"><a href="https://w.kast.live" target="_blank">OPEN KAST</a></button>
+      </div>
     </div>
     <div class="featuredContainer">
-        <h2 class="centered">Featured in</h2>
-        <table class="publicationsTable">
-            <tr>
-                <td class="publication" id="pub1"></td>
-                <td class="publication" id="pub2"></td>
-                <td class="publication" id="pub3"></td>
-            </tr>
-            <tr>
-                <td class="publication" id="pub4"></td>
-                <td class="publication" id="pub5"></td>
-                <td class="publication" id="pub6"></td>
-            </tr>
-        </table>
-        <div class="quoteContainer">
-            <q class="centered">Kast has probably never been more relevant - or necessary - than it is right now.</q>
-            <p class="author">-Yahoo Finance</p>
-        </div>
+      <h2 class="centered">Featured in</h2>
+      <table class="publicationsTable">
+        <tr>
+          <td class="publication" id="pub1"></td>
+          <td class="publication" id="pub2"></td>
+          <td class="publication" id="pub3"></td>
+        </tr>
+        <tr>
+          <td class="publication" id="pub4"></td>
+          <td class="publication" id="pub5"></td>
+          <td class="publication" id="pub6"></td>
+        </tr>
+      </table>
+      <div class="quoteContainer">
+        <q class="centered"
+          >Kast has probably never been more relevant - or necessary - than it
+          is right now.</q
+        >
+        <p class="author">-Yahoo Finance</p>
+      </div>
     </div>
     <div class="greenContainer">
-        <h1 class="centered whiteColor">What is Kast?</h1>
-        <h3 class="centered whiteColor">Looking for a place to watch movies, play, and hang out with friends? Hop onto Kast and start sharing experiences real-time!</h3>
-        <h3 class="centered whiteColor">Up to 20 people can share their screen or camera and another 100 can watch.</h3>
-        <button class="openKast">OPEN KAST</button>
+      <h1 class="centered whiteColor">What is Kast?</h1>
+      <h3 class="centered whiteColor">
+        Looking for a place to watch movies, play, and hang out with friends?
+        Hop onto Kast and start sharing experiences real-time!
+      </h3>
+      <h3 class="centered whiteColor">
+        Up to 20 people can share their screen or camera and another 100 can
+        watch.
+      </h3>
+      <button class="openKast">OPEN KAST</button>
     </div>
-</body>
+  </body>
 </html>

@@ -1,11 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:700&display=swap");
+
+body {
+    font: normal 14px/1.8 "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .firstSection {
     background-image: url("assets/gradient-violet-bg.jpg");
 }
 
 .companyLogo {
     width: 201px;
+    transition: transform 0.3s;
 }
 
+.companyLogo:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
 
 nav {
     float: right;
@@ -13,12 +45,68 @@ nav {
 }
 
 
-li {
+.dropDownA {
     display: inline;
     color: white;
+    padding: 20px;
+}
+
+.dropdownLinksActive {
+    
+    color: #777784;
+}
+
+.dropdownLinksActive:hover {
+    text-decoration: underline;
+    background-color: #f8f9fa;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+label{
+    /* box-sizing: border-box; */
+    display: inline;
+    /* width: 100%; */
+    background-color: none;
+    /* padding: 15px 20px; */
+
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
 }
 
 
+
+.dropdownLinks {
+    display: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+    display: block;
+    background-color: white;
+    color: #777784;
+    list-style-type: none;
+    /* text-align: center; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.openKastAnchor {
+    border: 1px solid white;
+    background: none;
+    color: white;
+}
 
 .laptop {
     height: 503px;
@@ -40,6 +128,17 @@ li {
     margin: auto;
     color: white;
     background-color: #fd7e14;
+    border-radius: 3px;
+  background: #FE9000;
+  font-weight: bold;
+  /* text-align: center;
+  display: inline-block; */
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  height: 40px;
+  width: 215px;
+  font-size: 18px;
 }
 
 .featuredContainer {
