@@ -21,6 +21,7 @@ h3 {
 
 .firstSection {
     background-image: url("assets/gradient-violet-bg.jpg");
+    padding-bottom: 60px;
 }
 
 .companyLogo {
@@ -102,6 +103,11 @@ a {
     color: white;
 }
 
+.dropdowns {
+    text-decoration: none;
+    color: #777784;
+}
+
 .openKastAnchor {
     border: 1px solid white;
     background: none;
@@ -146,59 +152,44 @@ a {
     background-color: white;
     display: block;
     margin: auto;
+    padding: 110px 0;
 }
 
 
 
 .publicationsTable{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 140px;
+    grid-row-gap: 80px;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    border-radius: 3px;
     width: 880px;
     height: 228px;
-    margin: auto;
+    margin: 0 auto 60px;
 }
 
-.publication {
-    width: 200px;
-}
 
-#pub1 {
-    background-image: url("assets/wired-logo.svg");
-    background-size: cover;
-}
-
-#pub2 {
-    background-image: url("assets/nerdist-logo.svg");
-    background-size: cover;
-}
-
-#pub3 {
-    background-image: url("assets/yahoo-finance-logo.svg");
-    background-size: cover;
-}
-
-#pub4 {
-    background-image: url("assets/evening-standard-logo.svg");
-    background-size: cover;
-}
-
-#pub5 {
-    background-image: url("assets/bbc-logo.svg");
-    background-size: cover;
-}
-
-#pub6 {
-    background-image: url("assets/daily-mail-logo.svg");
-    background-size: cover;
-}
 
 .quoteContainer {
-    width: 50%;
+    width: 280px;
     margin: auto;
+}
+
+.quote {
+    font-size: 14px;
+    /* display: inline; */
 }
 
 .author {
+    font-size: 12px;
     text-align: right;
 }
 
 .greenContainer {
     background-image: url("assets/green-bg.jpg");
+    padding: 110px 0;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
     <div class="firstSection">
@@ -17,29 +17,68 @@
           />
           <nav>
             <ul class="navbar mr-auto">
-
               <li class="dropDownA">
-                  <input type="checkbox" id="aboutToggle" />
-                  <label for="aboutToggle"
-                    >About<i class="fa fa-caret-down"></i
-                  ></label>
-                  <ul class="dropdownLinks">
-                    <l1 class="dropdownLinksActive">What is Kast?</l1>
-                    <li class="dropdownLinksActive">Blog</li>
-                    <li class="dropdownLinksActive">Press Releases</li>
-                    <li class="dropdownLinksActive">Company</li>
-                  </ul>
+                <input type="checkbox" id="aboutToggle" />
+                <label for="aboutToggle"
+                  >About<i class="fa fa-caret-down"></i
+                ></label>
+                <ul class="dropdownLinks">
+                  <l1 class="dropdownLinksActive"
+                    ><a href="#greenSection" class="dropdowns"
+                      >What is Kast?</a
+                    ></l1
+                  >
+                  <li class="dropdownLinksActive">
+                    <a
+                      href="https://medium.com/kasthq"
+                      class="dropdowns"
+                      target="_blank"
+                      >Blog</a
+                    >
+                  </li>
+                  <li class="dropdownLinksActive">
+                    <a
+                      href="https://medium.com/kast-press"
+                      class="dropdowns"
+                      target="_blank"
+                      >Press Releases</a
+                    >
+                  </li>
+                  <li class="dropdownLinksActive">
+                    <a href="https://www.kastapp.co/company.html" class="dropdowns"
+                      >Company</a
+                    >
+                  </li>
+                </ul>
               </li>
-              
+
               <li class="dropDownA">
                 <input type="checkbox" id="helpToggle" />
                 <label for="helpToggle"
                   >Help<i class="fa fa-caret-down"></i
                 ></label>
                 <ul class="dropdownLinks">
-                  <l1 class="dropdownLinksActive">Contact Support</l1>
-                  <li class="dropdownLinksActive">FAQ's</li>
-                  <li class="dropdownLinksActive">Downloads</li>
+                  <l1 class="dropdownLinksActive"
+                    ><a
+                      href="https://kast.zendesk.com/hc/en-us/requests/new"
+                      target="_blank"
+                      class="dropdowns"
+                      >Contact Support</a
+                    ></l1
+                  >
+                  <li class="dropdownLinksActive">
+                    <a
+                      href="https://kast.zendesk.com/hc/en-us"
+                      target="_blank"
+                      class="dropdowns"
+                      >FAQ's</a
+                    >
+                  </li>
+                  <li class="dropdownLinksActive">
+                    <a href="https://www.kastapp.co/download.html" class="dropdowns"
+                      >Downloads</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="dropDownA">
@@ -48,14 +87,37 @@
                   >Community<i class="fa fa-caret-down"></i
                 ></label>
                 <ul class="dropdownLinks">
-                  <l1 class="dropdownLinksActive">Community Guidelines</l1>
-                  <li class="dropdownLinksActive">Founders Hall of Fame</li>
-                  <li class="dropdownLinksActive">Shop Kast Swag</li>
+                  <l1 class="dropdownLinksActive"
+                    ><a
+                      href="https://www.kastapp.co/community-guidelines.html"
+                      class="dropdowns"
+                      >Community Guidelines</a
+                    ></l1
+                  >
+                  <li class="dropdownLinksActive">
+                    <a
+                      href="https://www.kastapp.co/kast-founders.html"
+                      class="dropdowns"
+                      >Founders Hall of Fame</a
+                    >
+                  </li>
+                  <li class="dropdownLinksActive">
+                    <a
+                      href="https://shop.kast.gg"
+                      target="_blank"
+                      class="dropdowns"
+                      >Shop Kast Swag</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li class="dropDownA">Premium</li>
+              <li class="dropDownA">
+                <a href="https://www.kastapp.co/subscriptions.html">Premium</a>
+              </li>
             </ul>
-            <a href="https://w.kast.live" target="_blank" class="openKastAnchor">OPEN KAST</a>
+            <a href="https://w.kast.live" target="_blank" class="openKastAnchor"
+              >OPEN KAST</a
+            >
           </nav>
         </div>
       </header>
@@ -66,32 +128,30 @@
           Share movies, TV shows, and whatever you want with friends online.
           Join millions of kasters today!
         </h3>
-        <button class="openKast"><a href="https://w.kast.live" target="_blank">OPEN KAST</a></button>
+        <button class="openKast">
+          <a href="https://w.kast.live" target="_blank">OPEN KAST</a>
+        </button>
       </div>
     </div>
     <div class="featuredContainer">
       <h2 class="centered">Featured in</h2>
-      <table class="publicationsTable">
-        <tr>
-          <td class="publication" id="pub1"></td>
-          <td class="publication" id="pub2"></td>
-          <td class="publication" id="pub3"></td>
-        </tr>
-        <tr>
-          <td class="publication" id="pub4"></td>
-          <td class="publication" id="pub5"></td>
-          <td class="publication" id="pub6"></td>
-        </tr>
-      </table>
+      <div class="publicationsTable">
+        <img src="assets/wired-logo.svg" />
+        <img src="assets/nerdist-logo.svg" />
+        <img src="assets/yahoo-finance-logo.svg" />
+        <img src="assets/evening-standard-logo.svg" />
+        <img src="assets/bbc-logo.svg" />
+        <img src="assets/daily-mail-logo.svg" />
+      </div>
       <div class="quoteContainer">
-        <q class="centered"
+        <q class="quote"
           >Kast has probably never been more relevant - or necessary - than it
           is right now.</q
         >
         <p class="author">-Yahoo Finance</p>
       </div>
     </div>
-    <div class="greenContainer">
+    <div class="greenContainer" id="greenSection">
       <h1 class="centered whiteColor">What is Kast?</h1>
       <h3 class="centered whiteColor">
         Looking for a place to watch movies, play, and hang out with friends?
@@ -101,7 +161,9 @@
         Up to 20 people can share their screen or camera and another 100 can
         watch.
       </h3>
-      <button class="openKast">OPEN KAST</button>
+      <button class="openKast">
+        <a href="https://w.kast.live" target="_blank">OPEN KAST</a>
+      </button>
     </div>
   </body>
 </html>
